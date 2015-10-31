@@ -1,0 +1,21 @@
+{
+  "name": "lanchat",
+  "version": "1.0.0",
+  "main": "main.js",
+  "description": "lan text messaging",
+  "dependencies": {
+    "angular2": "^2.0.0-alpha.44",
+    "bootstrap": "^3.3.5",
+    "jquery": "^2.1.4",
+    "ng2-bootstrap": "^0.44.3",
+    "systemjs": "^0.19.5"
+  },
+  "devDependencies": {
+      "typescript": "^1.6.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hugo Alvarado",
+  "license": "ISC"
+}
