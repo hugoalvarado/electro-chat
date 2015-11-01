@@ -1,14 +1,32 @@
 // ES6
 
-import {Component, bootstrap} from 'angular2/angular2';
+import {Component, View, bootstrap, CORE_DIRECTIVES} from 'angular2/angular2';
 
 @Component({
-    selector: 'my-app',
-    templateUrl: 'app.html'
+    selector: 'my-app'
+})
+
+@View({
+    templateUrl: 'app.html',
+    directives: [CORE_DIRECTIVES]
 })
 
 class AppComponent {
-    //this.myName = "Hugo";
+    name:string = "Angular2";
+    chatLog:string = "test";
+
+    messageInputPress(text) {
+
+        if(text.value){
+            this.chatLog = `${this.chatLog}
+${text.value}`;
+
+            text.value = null;
+        }
+
+    }
 }
 
+
+//load component once page is loaded (DOMContentLoaded)
 bootstrap(AppComponent);

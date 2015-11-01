@@ -9,6 +9,8 @@
     <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
     <script src="node_modules/systemjs/dist/system.js"></script>
 
+    <script src="node_modules/socket.io/socket.io.js"></script>
+
     <!--
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -17,10 +19,7 @@
 
 
     <script>
-    /*  System.config({
-        packages: {'app': {defaultExtension: 'js'}}
-      });
-      System.import('app/app');*/
+        var socket = io();
     </script>
 
   </head>
